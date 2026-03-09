@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter The Number : -");
+        int num=in.nextInt();
+        int count=0;
+        if(num<2){
+            System.out.println("Low Value");
+        }
+        for(int i=1;i<=num;i++){
+            if(num%i==0){
+                count+=1;
+            }
+        }
+        if(count>2){
+            System.out.println("The Given Number "+num+" is Not Prime Number");
+        }else{
+            System.out.println("The Given Number " +num+" is Prime Number");
+        }
+    }
+}
